@@ -9,9 +9,16 @@ namespace DemoViews2
 {
     public partial class MainPage : ContentPage
     {
+     
+
         public MainPage()
         {
             InitializeComponent();
         }
+        async void Handle_Navigated(object sender, WebNavigatingEventArgs e){
+            await DisplayAlert("Completado", "Se ha completado la cargar de la Pagina", "OK");
+
+        }
+
     }
 }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DemoViews2.Ejercicio2">
+   <StackLayout>
+   <TableView Intent="Form">
+             <TableView.Root Title ="Test">
+                <TableSection Title="Primera Seccion">
+                <TextCell Detail="Departamento"/>
+                <EntryCell
+              Placeholder="Ingrese Area"
+                    Label="Area"
+                /> 
+                <SwitchCell Text="Provisional"></SwitchCell>
+
+                   <ViewCell>
+                    <ViewCell.View>
+                   <StackLayout Orientation="Horizontal">
+
+                            
+                        <Image 
+                            Source="Clientes.jpg"
+                            WidthRequest="40"
+                            HeightRequest="40"
+                            />
+                            <Label Text="Clientes"
+                                  VerticalTextAlignment="Center"/>
+                            </StackLayout>
+                  
+
+                        
+                    </ViewCell.View>
+                    </ViewCell>
+                    
+                </TableSection>
+                
+            </TableView.Root>
+            
+            <TableSection Title="Segunda Seccion"
+                          >
+               <TextCell Detail="Profesion"/>
+                
+
+                <EntryCell
+                Label="Especialidad"
+                    Placeholder="Ingrese Especialidad"
+                />
+
+                <SwitchCell Text="Graduado"/>
+
+                 <ViewCell>
+                    <ViewCell.View>
+                   <StackLayout Orientation="Horizontal">
+
+                            
+                        <Image 
+                            Source="Empresarios.jpg"
+                            WidthRequest="40"
+                            HeightRequest="40"
+                            />
+                            <Label Text="Empresarios"
+                                  VerticalTextAlignment="Center"/>
+                            </StackLayout>
+                  
+
+                        
+                    </ViewCell.View>
+                    </ViewCell>
+                    
+                    
+            </TableSection>
+            
+
+
+            
+        </TableView>
+        
+    </StackLayout>
+</ContentPage>
